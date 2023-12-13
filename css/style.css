@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: lightgray;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    min-height: 80px;
+    background-color: #605a5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title {
+    height: 100%;
+    font-size: 35px;
+    color: white;
+    
+}
+.category_menu {
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    padding: 20px 20px;
+    background-color: white;
+}
+.category_list li {
+    cursor: pointer;
+}
+.category_list li i {
+    width: 15%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.category_list {
+    list-style: none;
+}
+
+.category_list li {
+    line-height: 40px;
+}
+
+.category_list li span {
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+}
+
+.container_card {
+    width: 30%;
+    display: flex;
+    margin: 50px 100px;
+    flex-direction: column;
+    
+}
+
+.item_card {
+    cursor: pointer;
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 11px 14px 20px -8px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.item_card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: grey;
+}
+
+.item_card img{
+    transition: 0.5s;
+    
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.item_card p {
+    text-align: center;
+}
+
+.item_card:hover img{
+    transform: scale(1.1);
+}
+
+.info_card h3 {
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+.info_card {
+    position: absolute;
+    top: 80px;
+    width: 30%;
+    padding: 50px 40px;
+    height: 100vh;
+    right: -50%;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.info_card button {
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 190px;
+    height: 40px;
+    border: none;
+    background-color: lightgreen;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+.info_card button:hover {
+    color: white;
+    background-color: rgb(60, 200, 60);
+}
